@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>反诈情景模拟演练</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%231d4ed8' d='M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部栏 -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <svg class="shield-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z" fill="currentColor"/>
+      </svg>
+      <div>
+        <h1 class="app-title">反诈情景模拟演练</h1>
+        <p class="app-sub">面对套路，先冷静判断，再决定如何回应</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== 视图：剧本选择首页 ===== -->
+    <section id="view-home" class="view">
+      <div class="hero">
+        <h2>选择一个场景开始演练</h2>
+        <p>下面模拟常见诈骗剧本。每个选项都会影响结果，注意识别话术里的风险信号。</p>
+      </div>
+      <div id="scene-list" class="scene-grid"><!-- JS 渲染剧本卡片 --></div>
+      <div class="tips-panel">
+        <h3>牢记反诈三问</h3>
+        <ul>
+          <li>对方身份是否能通过官方渠道核实？</li>
+          <li>是否被催促、被恐吓，要求立刻转账或提供验证码？</li>
+          <li>涉及银行卡、密码、短信验证码，是否已告知陌生人？</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 视图：对话演练 ===== -->
+    <section id="view-chat" class="view hidden">
+      <div class="chat-head">
+        <button id="btn-back" class="ghost-btn" type="button">← 返回场景</button>
+        <div class="chat-title">
+          <span id="chat-scene-name"></span>
+        </div>
+        <div class="score-box">得分 <strong id="score">0</strong></div>
+      </div>
+
+      <div id="chat-box" class="chat-box" aria-live="polite"></div>
+      <div id="choice-box" class="choice-box"></div>
+    </section>
+
+    <!-- ===== 视图：结局总结 ===== -->
+    <section id="view-end" class="view hidden">
+      <div class="end-card">
+        <div id="end-badge" class="end-badge"></div>
+        <h2 id="end-title"></h2>
+        <p id="end-text" class="end-text"></p>
+        <div id="end-tip" class="end-tip"></div>
+        <div class="end-actions">
+          <button id="btn-retry" class="primary-btn" type="button">再练一次</button>
+          <button id="btn-home" class="ghost-btn" type="button">返回场景列表</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>本页面为反诈宣传模拟演练，剧情均为虚构示例。如遇可疑情况，请拨打反诈专线 96110 核实。</p>
+  </footer>
+
+  <script src="js/story.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
