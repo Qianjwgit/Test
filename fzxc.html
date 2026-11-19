@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html data-page-node-id="2DzbL5j9RwewOPSbWrZ1FJ" lang="zh-CN">
+<head data-page-node-id="LNXOBcoFIj6u398PvROA6i">
+<script data-page-node-id="POrluhSc4NSh9i1UeKxx5c" src="/page/page_comm/inject.js"></script>
+<meta data-page-node-id="cML9p8ZyeyiwfNsuA5hhIY" charset="UTF-8">
+<meta data-page-node-id="TLSu72xQ4RkrnWpY5HKNTF" content="width=device-width, initial-scale=1.0" name="viewport">
+<title data-page-node-id="rW4u5Nr6S0eqymcXBZkPhR" data-pnid-children="c3mTARpHjluGppoM7zrLC2">1.28元的诱饵，399万的代价</title>
+<style data-page-node-id="dd4Q1q2t4PWyirzK9WB6L7" data-pnid-children="L50e12APsNFcTvuynAiKio">
+  :root{
+    --bg:#0d1117;
+    --card:#161b22;
+    --card2:#1c2330;
+    --red:#ff4d4f;
+    --red-deep:#c0392b;
+    --gold:#f5c542;
+    --text:#e6e6e6;
+    --muted:#9aa5b1;
+    --line:#2d3646;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:#000;
+    display:flex;justify-content:center;
+    font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--text);
+  }
+  .poster{
+    width:100%;max-width:720px;
+    background:var(--bg);
+    padding:0 0 60px 0;
+    overflow:hidden;
+  }
+  /* ===== 头图 ===== */
+  .hero{
+    position:relative;
+    padding:64px 36px 44px;
+    background:linear-gradient(160deg,#2a0a0d 0%,#0d1117 70%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero::before{
+    content:"";
+    position:absolute;top:-80px;right:-80px;
+    width:320px;height:320px;border-radius:50%;
+    background:radial-gradient(circle,rgba(255,77,79,.22),transparent 70%);
+  }
+  .tag{
+    display:inline-block;
+    border:1px solid var(--red);
+    color:var(--red);
+    font-size:13px;letter-spacing:4px;
+    padding:6px 14px;border-radius:2px;
+    margin-bottom:26px;
+  }
+  .hero h1{
+    font-size:44px;line-height:1.25;font-weight:800;
+    letter-spacing:2px;
+  }
+  .hero h1 .big{
+    color:var(--red);
+    font-size:56px;
+  }
+  .hero .sub{
+    margin-top:20px;
+    color:var(--muted);
+    font-size:15px;line-height:1.8;
+  }
+  .real{
+    margin-top:26px;
+    display:inline-block;
+    font-size:13px;color:var(--gold);
+    border-left:3px solid var(--gold);
+    padding-left:10px;
+    letter-spacing:1px;
+  }
+  /* ===== 数字对比 ===== */
+  .vs{
+    display:flex;
+    margin:44px 36px 0;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .vs .col{
+    flex:1;padding:28px 10px;text-align:center;
+  }
+  .vs .col:first-child{border-right:1px dashed var(--line);}
+  .vs .num{
+    font-size:40px;font-weight:800;
+  }
+  .vs .n1{color:var(--muted);}
+  .vs .n2{color:var(--red);}
+  .vs .lbl{
+    margin-top:8px;font-size:13px;color:var(--muted);letter-spacing:2px;
+  }
+  .vs .arrow{
+    display:flex;align-items:center;justify-content:center;
+    padding:0 4px;color:var(--red);font-size:22px;
+  }
+  /* ===== 章节标题 ===== */
+  .sec{
+    padding:56px 36px 0;
+  }
+  .sec-title{
+    display:flex;align-items:center;gap:12px;
+    margin-bottom:8px;
+  }
+  .sec-title .bar{
+    width:6px;height:26px;background:var(--red);border-radius:3px;
+  }
+  .sec-title h2{
+    font-size:24px;font-weight:800;letter-spacing:1px;
+  }
+  .sec-desc{
+    color:var(--muted);font-size:14px;margin-bottom:26px;padding-left:18px;
+  }
+  /* ===== 时间线 ===== */
+  .timeline{position:relative;padding-left:26px;}
+  .timeline::before{
+    content:"";position:absolute;left:7px;top:8px;bottom:8px;
+    width:2px;background:var(--line);
+  }
+  .step{
+    position:relative;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:18px;
+  }
+  .step::before{
+    content:"";position:absolute;left:-25px;top:24px;
+    width:12px;height:12px;border-radius:50%;
+    background:var(--bg);border:3px solid var(--muted);
+  }
+  .step.hot::before{border-color:var(--red);background:var(--red-deep);}
+  .step .day{
+    font-size:12px;color:var(--gold);letter-spacing:2px;margin-bottom:6px;
+  }
+  .step .what{
+    font-size:16px;font-weight:700;line-height:1.5;
+  }
+  .step .mind{
+    margin-top:10px;
+    font-size:13px;line-height:1.7;color:var(--muted);
+    background:var(--card2);
+    border-left:3px solid var(--muted);
+    padding:8px 12px;border-radius:0 6px 6px 0;
+  }
+  .step.hot .mind{
+    border-left-color:var(--red);
+  }
+  .step .mind b{color:var(--red);}
+  .money{
+    color:var(--red);font-weight:800;
+  }
+  /* ===== 引用 ===== */
+  .quote{
+    margin:44px 36px 0;
+    background:linear-gradient(140deg,#2a0a0d,#161b22);
+    border:1px solid rgba(255,77,79,.4);
+    border-radius:12px;
+    padding:30px 28px;
+  }
+  .quote .q{
+    font-size:19px;line-height:1.8;font-weight:700;
+  }
+  .quote .q .hl{color:var(--red);}
+  .quote .src{
+    margin-top:14px;font-size:12px;color:var(--muted);letter-spacing:1px;
+  }
+  .quote + .quote{margin-top:16px;}
+  /* ===== 点破 ===== */
+  .truth{
+    margin:12px 36px 0;
+    border:1px dashed var(--gold);
+    border-radius:10px;
+    padding:18px 20px;
+    font-size:14px;line-height:1.9;color:var(--gold);
+  }
+  /* ===== 清单 ===== */
+  .check{
+    margin:0 36px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .check .item{
+    display:flex;gap:14px;align-items:flex-start;
+    padding:18px 20px;
+    border-bottom:1px solid var(--line);
+  }
+  .check .item:last-child{border-bottom:none;}
+  .check .box{
+    flex:none;
+    width:22px;height:22px;border:2px solid var(--red);
+    border-radius:4px;margin-top:2px;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--red);font-weight:800;font-size:14px;
+  }
+  .check .txt{
+    font-size:15px;line-height:1.7;
+  }
+  .check .txt small{
+    display:block;color:var(--muted);font-size:12.5px;margin-top:4px;
+  }
+  /* ===== 口诀 ===== */
+  .motto{
+    margin:48px 36px 0;
+    text-align:center;
+    background:linear-gradient(160deg,#3a2a0a,#2a0a0d);
+    border:1px solid rgba(245,197,66,.5);
+    border-radius:14px;
+    padding:34px 24px;
+  }
+  .motto .m{
+    font-size:26px;font-weight:800;line-height:1.9;letter-spacing:3px;
+    color:var(--gold);
+  }
+  .motto .mm{
+    margin-top:12px;font-size:15px;color:var(--text);letter-spacing:2px;
+  }
+  /* ===== 尾部 ===== */
+  .footer{
+    margin:52px 36px 0;
+    text-align:center;color:var(--muted);
+    font-size:12.5px;line-height:2;
+  }
+  .hotline{
+    margin-top:18px;
+    display:inline-block;
+    background:var(--red);
+    color:#fff;
+    font-size:20px;font-weight:800;letter-spacing:3px;
+    padding:14px 34px;border-radius:40px;
+  }
+  .note{
+    margin-top:16px;font-size:11.5px;color:#6b7480;
+  }
+</style>
+</head>
+<body data-page-node-id="g3kPXWvTJb5HUrSJHCZntW">
+<div data-page-node-id="T8dlgDOKo1byAfreACBy0Q" class="poster">
+
+  <!--pnid:wSuXYXLTISr0bl2Uy0O6OD--><!-- 头图 -->
+  <div data-page-node-id="3ltofP6UNTkWVYxZjEIiCH" class="hero">
+    <span data-page-node-id="flMGXmNVmPWEuDzih6r1dX" class="tag"><!--pnid:uQJaqXJkSW2i8aihY2NLko-->反诈警示</span>
+    <h1 data-page-node-id="l3U0AvuDCKFcWIUAQRMyaK"><!--pnid:Nw1VOJUqRho2PlZDiNXfok-->一份<span data-page-node-id="WOjx6Htq8mjfNfN4dASFqN" class="big"><!--pnid:eGESwek1CicXvUh2WDJpiI-->1.28元</span><!--pnid:WSTRWHzFEFT2Njg7gtXino-->的资料<br data-page-node-id="xQEEqCTNm9Ge6jlYR9J4xU"><!--pnid:jJEFwrqjO61EocTNK1j85n-->骗走<span data-page-node-id="5eabZNISgIoiUrLrhRHqXi" class="big"><!--pnid:6jPm4OmeYy3xImCckHXC7R-->399万</span><!--pnid:srrV5CQoNK4pogtYpHz8ku-->积蓄</h1>
+    <div data-page-node-id="mVY7ipIpJfhj8ZZSP01eYV" class="sub"><!--pnid:gifETS1CZJMhER8LBxADC3-->受害者：46岁 · 高级知识分子<br data-page-node-id="WLp4dyZMpOfcyvAds0zWQP"><!--pnid:LfHKASq62I0hHjta9NdDCP-->
+    他接到过96110劝阻电话——然后转出了第三笔钱。</div>
+  </div>
+
+  <!--pnid:shViAaSlWLwLvTGqhCUdva--><!-- 数字对比 -->
+  <div data-page-node-id="8TDWpgcwPLOCJ8eBkaqtPH" class="vs">
+    <div data-page-node-id="4R6nZWQQbbrKBT8EFQxcry" class="col">
+      <div data-page-node-id="VLjA8q7dTYbCweBYW1dLDs" class="num n1"><!--pnid:dkXoidQZy4MSkkmCIAaf07-->¥1.28</div>
+      <div data-page-node-id="agDCH8n5dZkmlkXyqtliSi" class="lbl"><!--pnid:a14GrDdnYvK6lPvQc5Gu1S-->骗局的门票</div>
+    </div>
+    <div data-page-node-id="QVls74cCJ3VMT6EpmK8jZk" class="arrow"><!--pnid:HcWwY8w9Yrt5INhmR0uXcI-->➜</div>
+    <div data-page-node-id="JihWwiAtcruVdXEUDgBZ1U" class="col">
+      <div data-page-node-id="MdLgTspTbBW4mxFAnfgBzS" class="num n2"><!--pnid:0NgSUmmLttmCOTcVMSHkyL-->¥399万</div>
+      <div data-page-node-id="mHXNMbDnCahR7IoHJrxMwe" class="lbl"><!--pnid:YuMVZmlSL7PyeajcAcb9Y1-->最终的代价</div>
+    </div>
+  </div>
+
+  <!--pnid:GrS1hxe8n8IZZFXA9YnMay--><!-- 时间线 -->
+  <div data-page-node-id="Pk7FVvbIP1xzCRdRrM0oGA" class="sec">
+    <div data-page-node-id="3IbTNXvupxGVq5Oe2eoOyB" class="sec-title">
+      <div data-page-node-id="yvqCDkz5seeZIC3CD5tWYw" class="bar"></div>
+      <h2 data-page-node-id="SjjL4IgD9gHDdW4L5848jM"><!--pnid:0b7JesXOPeoI4LpyGPfPeh-->他每一步都觉得"自己看得懂"</h2>
+    </div>
+    <div data-page-node-id="Afa0a10QIXdQ6ZK4ZvzTud" class="sec-desc"><!--pnid:V6uFqSx5YWKu960nLOZBLZ-->请对照：如果是你，会卡在哪一步停下来？</div>
+
+    <div data-page-node-id="v2H3yaw9XldBO6QDu6plj5" class="timeline">
+      <div data-page-node-id="hBSCSK0IdUNsI3DlKjFVMj" class="step">
+        <div data-page-node-id="I3eUM1kZHoRbDSZssnJ1X5" class="day"><!--pnid:y8fM0AchtdKybzN3Ze7O15-->第1步 · 10月初 · 闲鱼</div>
+        <div data-page-node-id="9vuR754jKZcEFgihGqY76h" class="what"><!--pnid:CZqgRg31EaWPiR3pHQGoTi-->花1.28元买一份股市投资电子资料</div>
+        <div data-page-node-id="5sIrYjOGMegFEci4jsnp1d" class="mind"><!--pnid:kuKHlebuEErd941VvDTxDi-->他的想法：<b data-page-node-id="xcAjJ9sWiksicizGBkOsK2"><!--pnid:XlwXhvD0RIQnOMFvuB9zZI-->"就是个零头，没什么风险。"</b><!--pnid:Yunv3wEBWuvMCv8VGQhono-->——骗子要的从来不是这1.28元，是你按他的要求下载软件。</div>
+      </div>
+      <div data-page-node-id="OdGmTBDTfrJwQ0fQCajtpE" class="step">
+        <div data-page-node-id="rVoQqH0D6EZLvbjBxBu0AE" class="day"><!--pnid:6Ua6NFahiX1qv3qqI2SwaG-->第2步 · 网盘链接</div>
+        <div data-page-node-id="981vSXh67MHTsnnabij41i" class="what"><!--pnid:Pemp1V8hWXWkKGcE99idCc-->绕过应用商店，安装陌生App"晨夕有期"</div>
+        <div data-page-node-id="qrF3PPfYcKkuJkqlJLCtUS" class="mind"><!--pnid:NEsNCj2hnnvtq1VnpD2jh7-->他的想法：<b data-page-node-id="b1aQF2xnyDQb9dAtuud1jJ"><!--pnid:QTtiNPNiUKYNLIZn2itgrb-->"资料在软件里，装了才能看。"</b><!--pnid:ty4S1ZWaXWfUJIHkVkvknO-->——从这里起，你离开了所有受监管的平台，进入骗子完全控制的房间。</div>
+      </div>
+      <div data-page-node-id="y3v5ve4xdj7T0XrTWUYV2H" class="step">
+        <div data-page-node-id="LIRZDyLTZI3NuRXFbz7AL3" class="day"><!--pnid:d0Bu9gBuUUlfmUXf2NrTDm-->第3步 · 群里"观察"三周</div>
+        <div data-page-node-id="kyhDuxlZB2DBYlEYKwiiyb" class="what"><!--pnid:OZQLBlmjICvYOQ5o7w3JEh-->老师荐股"基本持平"，亏了还赔钱</div>
+        <div data-page-node-id="M5sE0XTw4yoDZlip2YNHJc" class="mind"><!--pnid:GrkPXB5JjkXcyzUQa8OopO-->他的想法：<b data-page-node-id="ZuTuTXiRFlcsiNcWIot46N"><!--pnid:LFs431xZQXx2duJVu08tDD-->"我做了验证，老师确实有水平。"</b><!--pnid:pYKIfuqJkWOYIO91a5ofKd-->——你看到的一切盈利、赔付、截图，都是演给你看的剧本。</div>
+      </div>
+      <div data-page-node-id="NqXlwBOenSKzOMFnuokaoS" class="step">
+        <div data-page-node-id="KC9XXzLGFC7IPS7pVfr8vh" class="day"><!--pnid:01NLVna80KkDgt20EHbn3b-->第4步 · 签"私募合同"</div>
+        <div data-page-node-id="URGXBClsXzAFLirKGY6SEq" class="what"><!--pnid:q7yEgsFV8zTZmoCw4mP00A-->完整公司名、信用代码、对公账户、红头条款</div>
+        <div data-page-node-id="aI9ZHGIsOahKYPbAdaCMKB" class="mind"><!--pnid:ewWtg6OGn9Kz9R6ce162fw-->他的想法：<b data-page-node-id="bAfnEXTCZNUUtvaYgEWa3q"><!--pnid:bpoqIIr7f9Mplwi2KA4xSG-->"手续这么正规，是合法私募。"</b><!--pnid:ySbBnnWPPbgYdcHat3nctp-->——合同是真的，公章是假的；形式核验做满分，没人去证监会官网查过这家公司。</div>
+      </div>
+      <div data-page-node-id="vRrxB6NPXOXCnl6WtrwDa4" class="step">
+        <div data-page-node-id="YZw0RQuUjsSN2VyU8Hvb8d" class="day"><!--pnid:NsPuboiv7hrMnuujdmMSeK-->第5步 · 银行柜台</div>
+        <div data-page-node-id="q0xdoHJzNLoEUXXI2LBVIK" class="what"><!--pnid:yiJZH1MNgERGvbey8cGJDD-->转账 <span data-page-node-id="OvVWTlXv60IadQ4NtkJLjF" class="money"><!--pnid:JcpD5M6xa6q3HAA5EpHsut-->199万</span><!--pnid:lwYJwtDZhU4pehOTBhtM8c--> + <span data-page-node-id="iUH0eiSoksCYWHJY44vqjI" class="money"><!--pnid:2MwhUEPHtQbaDq0h2qufJQ-->99万</span><!--pnid:EDuS6CxgL48WOkD0owVJwK--> 至"基金账户"</div>
+        <div data-page-node-id="Nvr9oovUHJNEOxQZw76tDj" class="mind"><!--pnid:9uRGCFnLD4jn8brwGMv1cO-->他的想法：<b data-page-node-id="5sv3Pvq8RxB5x1EZ93jOwL"><!--pnid:VEyZvcZvNPS73H5xTctGEH-->"这是注资，是正规流程。"</b><!--pnid:aQg7Ak1wDyjYyftudlJTu3-->——收款方是一家矿业公司、一家供应链公司，和私募基金毫无关系。</div>
+      </div>
+      <div data-page-node-id="cTg5J3YWn8SmclphA2c8rW" class="step hot">
+        <div data-page-node-id="kdhyxYZ6gM7qhCx4OjXRFg" class="day"><!--pnid:uGAU53eF0POI9tliqhvndq-->第6步 · 关键时刻</div>
+        <div data-page-node-id="deBwHF0G7RlaaJL0QiCxU6" class="what"><!--pnid:avtuR4hy5mfNEKP2fUHAWa-->96110来电劝阻——他转出第三笔 <span data-page-node-id="I6kD2GLYFjCvaxAAPwZsjW" class="money"><!--pnid:rONPbFxs1oS9bp1WHyUYil-->99.97万</span></div>
+        <div data-page-node-id="6ilGWgnVJe8W65C7l7CHt6" class="mind"><!--pnid:5rAgbm650BZnwHDeZc3OgI-->他的原话：<b data-page-node-id="N0yZxYpbuysigIvbuZT1Y8"><!--pnid:tzh2nHjFL6cad7sE24rrON-->"感觉自己是专业的，能够避开被骗的结果。"</b><!--pnid:wEFBKfs0GBM90CT44SN6oF-->——这句话，就是整场骗局里最贵的一句话。</div>
+      </div>
+      <div data-page-node-id="JOr7dA35BOC5LCgpDtIuM4" class="step hot">
+        <div data-page-node-id="j6fTWlEPWDpNVPlqBwLY4P" class="day"><!--pnid:QBCqtKdLudHzFC9xNeiUqj-->第7步 · 10月18日</div>
+        <div data-page-node-id="HyCnGeQ88jNefzT556QsD9" class="what"><!--pnid:JSxGI9xjckUcRoTdUfzRzl-->拒绝继续注资 → 账号被"封" → 399万归零</div>
+        <div data-page-node-id="CN3FJVEndzqsjZnlLgwKTP" class="mind"><!--pnid:CoyCUA587rObX2AoGrVEfa-->所谓"封号"，是骗局的收尾动作。你的钱从进对公账户那一刻，就已经不在了。</div>
+      </div>
+    </div>
+  </div>
+
+  <!--pnid:fTI2ADEhB8uHSufrOCQVRg--><!-- 引用点破 -->
+  <div data-page-node-id="Wyk9izvbmMSFcLnbYeS57E" class="quote">
+    <div data-page-node-id="PJGxiWPFK2CJh9tDx7FddE" class="q"><!--pnid:SdAvwg0eYvNVejEAH8IH7G-->"被骗的都是不会思考的人。"<br data-page-node-id="GPUXNPw9sOh8pYyiP5W58I"><!--pnid:ULygDk1lFDb6btvfEfJJzd-->
+    —— 恰恰是<span data-page-node-id="RGsdsFSQ0q5rx1VSgo5yVg" class="hl"><!--pnid:UnCG9DgVap1jgrt0k93kUA-->骗子最喜欢的高价值目标</span><!--pnid:hkrabB6KLYND3DBP44VjPM-->：<br data-page-node-id="bkIrOfcoDUPDU6nTNZeshG"><!--pnid:Tl8Anj8k5tVWb4fa9V3Fq6-->有积蓄、有自信、有"我能识别风险"的幻觉。</div>
+    <div data-page-node-id="RU6kh6lyRxyGl2p7k2OXg9" class="src"><!--pnid:zLaZTWPnaMX0eO5KzEKEQl-->本案受害人是高级知识分子。学历和智商，从不写在骗子的排除名单上。</div>
+  </div>
+  <div data-page-node-id="lIg7WsPimd2IqWX2WrSSyW" class="truth"><!--pnid:CIOumgmg8uC9zAc9AcV6Ct-->💡 注意一个细节：他不是没核实——他核验了合同编号、信用代码、注册地址，<b data-page-node-id="Doip58eAUl5c0RTi8xLYRt" style="color:var(--gold)"><!--pnid:YAiXmXVIcwuKdzyetrgY7U-->他只是核验了骗子递给他的东西。</b><!--pnid:30BdLLnSHuCWaoSl4a1jC0-->真正的核实，只有一条路：去官方渠道，独立查证。</div>
+
+  <!--pnid:O31Jm5HfqWUOvJR4eCvIym--><!-- 三不清单 -->
+  <div data-page-node-id="IqcvnGZmLdKI4pXLz8z2EA" class="sec">
+    <div data-page-node-id="JCbJLWrjuosPVy4Ry14IYx" class="sec-title">
+      <div data-page-node-id="Fu4wUy4TcWWVSNsEZskyAb" class="bar"></div>
+      <h2 data-page-node-id="k4mf0ppX4egPnqSeXGlL4s"><!--pnid:K30vb2sVndi6KEInN7yfS3-->把这三条变成肌肉记忆</h2>
+    </div>
+    <div data-page-node-id="Rjs70bSN5sMqVYcJByuNwC" class="sec-desc"><!--pnid:aMKFPvOq6OySP7k21We7gx-->不需要你懂金融，只需要你在那三个瞬间停下来。</div>
+    <div data-page-node-id="0QVkzf4WdnrvEpkX5VgCqs" class="check">
+      <div data-page-node-id="4F9x6ex0EYABYndTzQ9I4i" class="item">
+        <div data-page-node-id="SOJDbP3W0vrRAtuloyWczI" class="box"><!--pnid:7yKN2SOPcxDzDaWMBgiN7F-->✓</div>
+        <div data-page-node-id="9iiGWRDHs3G1Qc7o2qh2vE" class="txt"><!--pnid:YYvo8gU0VIHG8GeEWLKwqH-->任何人让你<b data-page-node-id="9szElN508eS3Ws1o4QxXHN"><!--pnid:5WSkC4VDITlpO5iYb1TV0A-->离开正规平台</b><!--pnid:FfzMiSJdhpaxveevlATjvG-->去装软件、进群、开"子账户"
+          <small data-page-node-id="ukDaW358ysVO284CrvI9UQ"><!--pnid:y1XmLHln44OARtWGquXoiB-->闲鱼/微信里发来的网盘链接、二维码安装包 = 诈骗入口，一步都不要走。</small>
+        </div>
+      </div>
+      <div data-page-node-id="qfifGJPhgFbGWEhsYgGdLd" class="item">
+        <div data-page-node-id="ikVIu5FwBYxxp1Q008jUNN" class="box"><!--pnid:7aHLfMqnbREcXGy7hsuRba-->✓</div>
+        <div data-page-node-id="tTsG1vEHSafC3ynvV2O5Qy" class="txt"><!--pnid:RhoAq1WvbDSkSnu2g15vIA-->任何"投资"承诺<b data-page-node-id="s2E7CvWHYzGcswmc8LvAc6"><!--pnid:n6IDLFBTgQ7Wj0hiHlcQ24-->月赚50%、亏损有人赔</b>
+          <small data-page-node-id="BJhTL33yhPd5BfttsLBT5R"><!--pnid:QcrHJPWjBSJuddA0Ulk9hK-->合法私募从不承诺保收益。敢这么写的，100%是骗子，没有例外。</small>
+        </div>
+      </div>
+      <div data-page-node-id="gcvEKWn45yoYbPMiD06R2H" class="item">
+        <div data-page-node-id="BscWIfzGhBmp3nrXkPg47s" class="box"><!--pnid:FQ01qEbyPTBQSWCJfHN3uO-->✓</div>
+        <div data-page-node-id="l0u9l8xkGILjGjlFaptX4L" class="txt"><!--pnid:WZLCvwIuAIVFMOHeclojWS-->转钱之前，<b data-page-node-id="vfxWADYZQpgfzIJ1rLDKFi"><!--pnid:JmspIXwbcKSubLybEolKHe-->96110来电 = 国家在拉住你的手</b>
+          <small data-page-node-id="nYDDKtwNoV08QnBHhrON35"><!--pnid:NCyNPmtcNVKH7dqA8ZP2jI-->接到劝阻电话还在转账的，本案不是第一例。那通电话，是你止损的最后机会。</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--pnid:ht29RafbGnzD9Rv1W6O5pP--><!-- 口诀 -->
+  <div data-page-node-id="IyPW1vH1vXJ5VQChyeFXmG" class="motto">
+    <div data-page-node-id="yRGTu1tKlXWKeTm00bxoT5" class="m"><!--pnid:TxujOaXhzirhLt8GA7lD7f-->小利引你装软件<br data-page-node-id="WJNVINaRZFC3HmcyevPegW"><!--pnid:gS6PdHPtbhTXQThp1BABiY-->厚利诱你签合同<br data-page-node-id="iEKiDrnTIMsgw2mXGTm1MA"><!--pnid:BxYr3ktjMgFNxozRfu0sMJ-->劝阻之后还在转<br data-page-node-id="WkVVExF3fnB2ysjx7XwV0D"><!--pnid:cYq8v1RxQ889vDOyRpzhzE-->聪明也在局中输</div>
+    <div data-page-node-id="0sngFDDFxJmmjwhZhA3xqY" class="mm"><!--pnid:v7B6n2NXVQFtRke1Dm2Qve-->转账前先做一件事：打96110，问一句"这正常吗？"</div>
+  </div>
+
+  <div data-page-node-id="TKSdiuPXVCjNwffpJ2z5Ls" class="footer"><!--pnid:FPuWlp4Sx1qiEPCMMC9AEC-->
+    转发给那个总说"我不会被骗"的人——他可能正是下一个目标
+    <br data-page-node-id="d3QKbW5aNiibWjC8G88gJb"><br data-page-node-id="Ci3dxtTkVwM81c2Wgar0Km">
+    <span data-page-node-id="hVrpORrlts0TrkykFXErIE" class="hotline"><!--pnid:O3mhIsVM2prhl7ni4t4Q4L-->反诈专线 96110</span>
+    <div data-page-node-id="blZKxUNPjOsY2nlsUcOEIt" class="note"><!--pnid:0GdGZKxd1pvfSMLMKqQBiR-->全民反诈 · 转账之前 · 先问一句</div>
+  </div>
+
+</div>
+</body>
+</html>
